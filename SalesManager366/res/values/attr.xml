@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ChangeIconText -->
+    <attr name="view_icon" format="reference"></attr>
+    <attr name="view_color" format="color"></attr>
+    <attr name="view_text" format="string"></attr>
+    <attr name="text_size" format="dimension"></attr>
+    <!-- AppView -->
+    <attr name="column_count" format="integer"></attr>
+    <attr name="app_title_textsize" format="dimension"></attr>
+    <attr name="app_mode" format="string"></attr>
+    
+    <!-- VertifyCode 图片验证码-->
+    <attr name="code_count" format="integer"></attr>
+    <attr name="code_width" format="dimension"></attr>
+    <attr name="code_height" format="dimension"></attr>
+    
+    <!-- PersonImg 个人头像 -->
+    <attr name="person_img_height" format="dimension"></attr>
+    <attr name="person_img_width" format="dimension"></attr>
+    <attr name="person_img_pos" format="string"></attr>
+    
+    <!-- Button 按钮-->
+    <attr name="roundedCornerRadius" format="dimension"></attr>
+    <attr name="iconSize" format="dimension"></attr>
+    <attr name="iconPadding" format="dimension"></attr>
+    <attr name="roundedCorner" format="boolean"></attr>
+    <attr name="iconCenterAligned" format="boolean"></attr>
+    <attr name="iconName" format="string"></attr>
+    <attr name="transparentBackground" format="boolean"></attr>
+    
+    <declare-styleable name="ChangeIconText">
+	    <attr name="view_icon"></attr>
+	    <attr name="view_color"></attr>
+	    <attr name="view_text"></attr>
+	    <attr name="text_size"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="AppView">
+        <attr name="column_count"></attr>
+        <attr name="app_title_textsize"></attr>
+        <attr name="app_mode"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="VertifyCode">
+        <attr name="code_count"></attr>
+        <attr name="code_width"></attr>
+        <attr name="code_height"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="PersonImg">
+        <attr name="person_img_height"></attr>
+        <attr name="person_img_width"></attr>
+        <attr name="person_img_pos"></attr>
+    </declare-styleable>
+    <declare-styleable name="IconButton">
+        <attr name="roundedCornerRadius"></attr>
+	    <attr name="iconSize"></attr>
+	    <attr name="iconPadding"></attr>
+	    <attr name="roundedCorner"></attr>
+	    <attr name="iconCenterAligned"></attr>
+	    <attr name="iconName"></attr>
+	    <attr name="transparentBackground"></attr>
+    </declare-styleable>
+</resources>

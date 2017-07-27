@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#09D88A"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+   >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+
+       android:gravity="center_vertical"
+       android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="快注册  • 易操作"/>
+	<TextView 
+	    android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textColor="@color/white"
+        android:gravity="top"
+        android:text="十秒钟创建全新企业账号"/>
+	<ImageView 
+	    android:layout_weight="7"
+	    android:layout_height="0dp"
+	    android:layout_width="wrap_content"
+	    android:src="@drawable/guide2"
+	    android:layout_marginTop="8dp"
+	    android:scaleType="fitStart"/>
+   
+	
+</LinearLayout>

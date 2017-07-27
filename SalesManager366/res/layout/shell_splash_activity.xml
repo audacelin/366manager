@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/spalshAppLogo"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/shell_header_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:src="@drawable/luanch_182px" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shell_header_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/app_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#4C79C2"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/app_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/app_name_tv"
+            android:text="v1.0.0"
+            android:textColor="#86898b"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/footer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        >
+
+        <TextView
+        android:id="@+id/idStartIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:text="@string/main_start_up_caution"
+        android:gravity="center"
+        android:textColor="#bac8d5" />
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/shell_footer_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shell_footer_logo" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="8dp"
+            android:text="© 1993-2014 金蝶软件版权所有"
+            android:textColor="#bac8d5" />
+    </LinearLayout>
+   <include 
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/progress_loading"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

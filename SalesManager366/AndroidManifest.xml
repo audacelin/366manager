@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sm.activity"
+    android:versionCode="1"
+    android:versionName="1.0.14" >
+    <!-- 
+        <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true"
+        android:smallScreens="true"
+        android:anyDensity="true"
+        >
+    </supports-screens>
+     -->
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 来电拦截 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>"
+    
+    <!--用于进行网络定位  高德地图-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<!--用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<!--用于访问网络，网络定位需要上网-->
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<!--用于读取手机当前的状态-->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	
+		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.RECEIVE_SMS" />
+		<uses-permission android:name="android.permission.READ_SMS" />
+		<uses-permission android:name="android.permission.GET_TASKS" />
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.VIBRATE"/>	
+	
+	
+	 <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+	
+    <application
+        android:name="com.smlib.activity.ShellApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/shell_header_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity 
+            android:name="com.sm.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter> 
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" /> 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sm.activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <!--  <action android:name="android.intent.action.MAIN" /> -->
+               
+                <action android:name="com.sm.activity.RegisterActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.sm.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            >
+             <intent-filter>
+                 <!-- <action android:name="com.sm.activity.MainActivity" /> -->
+                 <action android:name="com.sm.activity.GuideActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.sm.activity.MainActivity"
+            android:screenOrientation="portrait"
+            >
+             <intent-filter>
+                 <!-- <action android:name="com.sm.activity.MainActivity" /> 
+                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                 -->
+                 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sm.activity.LogInActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.sm.activity.LogInActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 填写账号登录 -->
+        <activity
+            android:name="com.sm.activity.LoginWidthPhoneActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.sm.activity.LoginWidthPhoneActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 考勤签到 -->
+        <activity 
+            android:name="com.sm.activity.SignInActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.sm.activity.SignInActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 考勤签到统计 -->
+        <activity
+            android:name="com.sm.activity.SignInCheckActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action  android:name="com.sm.activity.SignInCheckActivity" />
+                 <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 外勤签到 -->
+        <activity
+            android:name="com.sm.activity.ExtendSignInActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter >
+                <action android:name="com.sm.activity.ExtendSignInActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 外勤签到 统计-->
+        <activity
+            android:name="com.sm.activity.ExtendCheckActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter >
+                <action android:name="com.sm.activity.ExtendCheckActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 外勤签到 点-->
+        <activity
+            android:name="com.sm.activity.SignInPointActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter >
+                <action android:name="com.sm.activity.SignInPointActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 工作计划-->
+        <activity
+            android:name="com.sm.activity.WorkActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter >
+                <action android:name="com.sm.activity.WorkActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 工作任务-->
+        <activity
+            android:name="com.sm.activity.TaskActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter >
+                <action android:name="com.sm.activity.TaskActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 客户-->
+        <activity
+            android:name="com.sm.activity.CustomerActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter >
+                <action android:name="com.sm.activity.CustomerActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 日报-->
+        <activity
+            android:name="com.sm.activity.DailyActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.sm.activity.DailyActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+         <!-- 更多-->
+        <activity
+            android:name="com.sm.activity.MoreActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.sm.activity.MoreActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".NewCompanyActivity"
+            android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        <activity
+            android:name=".PersonInfoActivity"
+            android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        
+        <activity
+		android:name="com.mob.tools.MobUIShell"
+		android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		android:configChanges="keyboardHidden|orientation|screenSize"
+		android:windowSoftInputMode="stateHidden|adjustResize"/>
+        
+        <!-- 标题栏加号 -->
+         <activity
+            android:name="com.sm.plusBar.PlusActivity"
+            android:theme="@style/myTransparent"
+             >
+        </activity>
+        
+         <!-- 扫一扫 -->
+         <activity android:name="com.sm.Zxing.Demo.CaptureActivity"
+			android:screenOrientation="portrait" 
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="stateAlwaysHidden"
+			>
+			
+		</activity>
+        
+        <!-- 高德debug -->
+         <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="814f6cbc09c415a43c32b858edeb21c7"/>
+         <!-- 声明高德服务 -->
+         <!-- 演示账号信息 -->
+         <meta-data 
+             android:name="DemoName"
+             android:value="haoxin_qiu"
+             />
+         <meta-data 
+             android:name="DemoSecret"
+             android:value="123"
+             />
+         <meta-data 
+             android:name="DemoCustName"
+             android:value="三友国际"
+             />
+         <meta-data
+             android:name="DemoCustNo"
+             android:value="10594"
+             />
+         
+         <!-- 应用id -->
+         <meta-data
+             android:name="AppID"
+             android:value="1001"
+             />
+         <service android:name="com.amap.api.location.APSService"></service>
+    </application>
+
+</manifest>

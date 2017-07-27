@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iconButton="http://schemas.android.com/apk/res/com.sm.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+    
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+</android.support.v4.view.ViewPager>
+<com.sm.view.BaseButtons 
+    android:id="@+id/bt_exp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="立即体验"
+    android:textColor="#ffffff"
+	android:layout_alignParentBottom="true"
+	android:layout_centerHorizontal="true"
+	android:layout_marginTop="5dp"
+	android:layout_marginBottom="46dp"
+	android:background="@null"
+	android:layout_above="@+id/ll_dot"
+	iconButton:roundedCorner="true"
+	iconButton:roundedCornerRadius="40dp"
+	iconButton:transparentBackground="true"
+    />
+ <!-- 
+ <com.
+	    android:id="@+id/bt_exp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="立即体验"
+	    android:textColor="#ffffff"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="26dp"
+	    android:background="@null"
+	    android:layout_above="@+id/ll_dot"
+/>
+  -->
+
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:id="@+id/ll_dot"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    >
+    
+</LinearLayout>
+<!-- 
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <Button 
+        android:id="@+id/bt_login"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:text="@string/login"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/btn_yellow"
+        android:textColor="@color/white"
+        />
+     <Button 
+        android:id="@+id/bt_register"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:text="@string/register"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
+ -->
+
+</RelativeLayout>
